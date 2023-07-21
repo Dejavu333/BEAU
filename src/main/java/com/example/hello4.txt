@@ -1,0 +1,61 @@
+def main([] args):void
+    FooClass foo = new FooClass()
+    foo = new FooClass("someparam")
+    foo.bar()
+
+num x @gt5 @lt10
+num helloBello   @gt5 @lt10 
+x = getUserInput() #
+x = 1   
+
+
+_class MyClass extends SuperClass
+    _num x = 1
+    num _x = 1
+    _def myMethod():void
+        out("Hello World")
+
+    def foo   //private
+    def Foo  //public
+    def ^Foo^ //overriden
+    def _Foo_ //stai 
+
+    class MyClass
+    class myClass
+    class _MyClass_
+    class _myClass_
+    class <MyClass>
+    class |MyClass|
+ 
+    _Foo_._Foo_()
+
+def bee(Arr args):void   
+
+    Map mymap = new Map(1 : "one", 2 : "two", 3 : "three")
+    mymap.add("key", "value") e> 
+    mymap.add("key":"value") e> out(?)
+    mymap.get("key")
+
+    try
+        Map mymap = new Map(1 : "one", 2 : "two", 3 : "three")
+        mymap.add("key", "value") e> 
+        mymap.add("key":"value") e> out(?)
+        mymap.get("key")
+    nab Err e 
+        out(e)
+    
+            
+    [
+    Map mymap = new Map(1 : "one", 2 : "two", 3 : "three")
+    mymap.add("key", "value")
+    mymap.add("key":"value")
+    mymap.get("key")
+    ]onadderr(?)
+
+    
+    Arr myarr = new Arr(0, 1, 2, 3, 4)
+    myarr.add("value")
+    myarr.get(0)
+
+youArr = new Arr(1, 2, 3)
+youArr.add(4)

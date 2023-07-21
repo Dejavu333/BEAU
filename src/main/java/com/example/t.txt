@@ -1,0 +1,19 @@
+def foo(num x, num y, num z): num
+    num f = 10
+    fee(10,20,30)
+
+[] arr = [1,2,3,4,5,6,7,8,9,10]
+[] arr = new [](1,2,3,4,5,6)
+{} map = {1:2, 3:4, 5:6, 7:8, 9:10}
+{} map = new {}(1:2, 3:4, 5:6)
+
+Map m = new Map(1:2, 3:4, 5:6)
+
+Arr a = new Arr(1,2,3,4,5,6)
+a.get(0)
+a.push(7)
+a.remove(0)
+
+map m = new map(1:2, 3:4, hex:6)
+m.get(1)
+m.get(hex)

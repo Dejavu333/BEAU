@@ -1,0 +1,23 @@
+str sgsd
+
+str fasz
+
+dec foo () : any
+
+dec fii(num x) : num
+
+_dec fuu(num y): void
+
+def koko(): void
+    print("koko")
+
+num x = 10
+
+1102
+true
+fasz =20+20
+koko()
+if x>0
+    print(y)
+else
+    print(x)

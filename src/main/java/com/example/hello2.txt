@@ -1,0 +1,19 @@
+10+20-10*2
+
+x+10 |> foo(x) |> bar(x) |> baz(x)
+
+x+10 
+|> 
+foo(x) 
+|> 
+bar(x) 
+|> 
+baz(x)
+
+x+10 |> foo(?) |> bar(?,x) |> baz(x,?) |>> y 
+
+x 
+|> 
+foo(?) 
+|>>
+num z @notnull

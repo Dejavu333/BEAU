@@ -1,0 +1,17 @@
+num x = 50 @notnull @twodigits
+x |> foo(?,10,20) |>> num z
+
+
+def foo(num x, num y, num z): num
+    num f = in()
+    out(x+y+z)
+    y+x+f |>> num result
+    re(result)
+
+
+if x == 50
+    print("x is 50")
+elif x == 100
+    print("x is 100")
+else
+    print("x is not 50 or 100")
