@@ -13,39 +13,28 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 public final class App {
-    private App() {
+    private App() {}
+    public static void main(String[] args) throws IOException {
+
+        CharStream input = CharStreams.fromFileName("./t.txt");
+
+        fLexer lexer = new fLexer(input);
+
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+        fParser parser = new fParser(tokens);
+
+        ProgramContext tree = parser.program();
+
+        ParseTreeWalker walker = new ParseTreeWalker();
+        fBaseListener listener = new fBaseListener();
+        walker.walk(listener, tree);
+
+        String javaCode = listener.getJavaCode();
+
+        System.out.println("Generated Java code: " + javaCode);
+
+        compileAndExecuteJavaCode(javaCode);
     }
-
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     * @throws IOException
-     */
-
-        public static void main(String[] args) throws IOException {
-            //charstream from hello.txt
-            //read hello.txt
-            CharStream input = CharStreams.fromFileName("E:/Letoltes/CODING_synced/CODING/_CODE proj/myLang/BEAU/language/demo/src/main/java/com/example/t.txt");
-         
-
-            fLexer lexer = new fLexer(input);
-    
-            CommonTokenStream tokens = new CommonTokenStream(lexer);
-            fParser parser = new fParser(tokens);
-    
-            ProgramContext tree = parser.program();
-    
-            ParseTreeWalker walker = new ParseTreeWalker();
-            fBaseListener listener = new fBaseListener();
-            walker.walk(listener, tree);
-    
-            String javaCode = listener.getJavaCode();
-
-            System.out.println("Generated Java code: " + javaCode);
-    
-            compileAndExecuteJavaCode(javaCode);
-        }
-    
 
     private static void compileAndExecuteJavaCode(String javaCode) {
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
